@@ -4,10 +4,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Ivan.StartWin"
-        Title="StartWin">
+        Title="Окно авторизации">
         
         <Grid>
                 
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="15">
+                        
+                 <Label Content="Вход" 
+                        FontSize="20"
+                        HorizontalContentAlignment="Center"/>
+                 <TextBox MinWidth="100" MaxWidth="200" Watermark="Логин"/>
+                 <TextBox  Watermark="Пароль"/>
+                 
+                 <Button Name="AuthButton" HorizontalAlignment="Center" Content="Войти"  Click="Button_OnClick" />
+                 
+                 
+                 
+                        
+                        
+                </StackPanel>
+            
+            <Label Name="OshibkaLabel"/>
+
         </Grid>
         
         
