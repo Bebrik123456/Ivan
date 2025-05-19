@@ -1,0 +1,26 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Ivan.CreateTaskWIn"
+        Title="CreateTaskWIn">
+        
+       
+        <Grid>
+                <Button HorizontalAlignment="Left" VerticalAlignment="Top" Content="Назад"  Margin="5 5 0 0"/>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="10">
+                      <TextBox Watermark="Адрес"  MaxWidth="120"/>
+                      <TextBox Watermark="Название" MaxWidth="120" />
+                      <TextBox Watermark="Описание" AcceptsReturn="True" TextWrapping ="Wrap" MaxWidth="250" MaxHeight="75" />         
+                        <Button HorizontalAlignment="Center"
+                                Name="CreateOrderButton" 
+                                Content="Создать заказ"
+                                Width="120" Height="30"/>
+                </StackPanel>
+                <Label Name="TestLabel" VerticalAlignment="Center" HorizontalAlignment="Right"  />
+        </Grid>
+        
+        
+        
+</Window>

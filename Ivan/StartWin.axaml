@@ -13,18 +13,18 @@
                  <Label Content="Вход" 
                         FontSize="20"
                         HorizontalContentAlignment="Center"/>
-                 <TextBox MinWidth="100" MaxWidth="200" Watermark="Логин"/>
-                 <TextBox  Watermark="Пароль"/>
+                 <TextBox MinWidth="100" MaxWidth="200" Watermark="Логин" Name="LoginTextBox"/>
+                 <TextBox Name="PasswordTextBox" MaxWidth="200"  Watermark="Пароль"/>
                  
                  <Button Name="AuthButton" HorizontalAlignment="Center" Content="Войти"  Click="Button_OnClick" />
                  
-                 
+                   <Label Name="OshibkaLabel" Foreground="Red" FontSize="18"/>
                  
                         
                         
                 </StackPanel>
             
-            <Label Name="OshibkaLabel"/>
+          
 
         </Grid>
         

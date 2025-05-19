@@ -4,9 +4,9 @@ using Avalonia.Markup.Xaml;
 
 namespace Ivan;
 
-public partial class EmploeeWin : Window
+public partial class CreateTaskWIn : Window
 {
-    public EmploeeWin()
+    public CreateTaskWIn()
     {
         InitializeComponent();
     }
