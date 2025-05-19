@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="Ivan/App.axaml" value="Ivan/Ivan.csproj" />
+        <entry key="Ivan/MainWindow.axaml" value="Ivan/Ivan.csproj" />
+        <entry key="Ivan/StartWin.axaml" value="Ivan/Ivan.csproj" />
+      </map>
+    </option>
+  </component>
+</project>
