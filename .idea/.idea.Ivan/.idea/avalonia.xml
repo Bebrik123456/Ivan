@@ -3,7 +3,10 @@
   <component name="AvaloniaProject">
     <option name="projectPerEditor">
       <map>
+        <entry key="Ivan/AdminWin.axaml" value="Ivan/Ivan.csproj" />
         <entry key="Ivan/App.axaml" value="Ivan/Ivan.csproj" />
+        <entry key="Ivan/DispatcherWin.axaml" value="Ivan/Ivan.csproj" />
+        <entry key="Ivan/EmploeeWin.axaml" value="Ivan/Ivan.csproj" />
         <entry key="Ivan/MainWindow.axaml" value="Ivan/Ivan.csproj" />
         <entry key="Ivan/StartWin.axaml" value="Ivan/Ivan.csproj" />
       </map>
