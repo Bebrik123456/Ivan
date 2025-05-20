@@ -52,7 +52,8 @@ public partial class EmployeeWin : Window
                         Name = reader.GetString("Name"),
                         Description = reader.GetString("Description"),
                         Adress = reader.GetString("Adress"),
-                        Accountable = reader.GetInt32("Accountable")
+                        Accountable = reader.GetInt32("Accountable"),
+                        Accepted = reader.GetInt32("Accepted")
                     });
                 }
             }
@@ -78,6 +79,8 @@ public partial class EmployeeWin : Window
         public string Adress { get; set; }
         
         public int Accountable { get; set; }
+
+        public int Accepted { get; set; }
 
     }
 
