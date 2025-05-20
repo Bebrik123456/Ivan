@@ -40,25 +40,19 @@
                 </Grid.RowDefinitions>
 
                 <TextBlock Grid.Row="0" Text="ID заказа:" Margin="5"/>
-                <TextBox Grid.Row="1" x:Name="OrderIdTextBox" Margin="5" IsReadOnly="True"/>
+                <TextBox Grid.Row="1" x:Name="OrderIdTextBox" Margin="5" />
 
                 <TextBlock Grid.Row="2" Text="Адрес:" Margin="5"/>
-                <TextBox Grid.Row="3" x:Name="AddressTextBox" Margin="5" IsReadOnly="True"/>
-
-                <TextBlock Grid.Row="4" Text="Статус:" Margin="5"/>
-                <ComboBox Grid.Row="5" x:Name="StatusComboBox" Margin="5">
-                    <ComboBoxItem>Новый</ComboBoxItem>
-                    <ComboBoxItem>В работе</ComboBoxItem>
-                    <ComboBoxItem>Завершен</ComboBoxItem>
-                </ComboBox>
+                <TextBox Grid.Row="3" x:Name="AddressTextBox" Margin="5" />
+                
             </Grid>
   
 
         <!-- Кнопки управления -->
         <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button Content="Редактировать" Margin="5" Width="100"/>
-            <Button Content="Назначить монтажника" Margin="5" Width="150"/>
-            <Button Content="Обновить" Margin="5" Width="100"/>
+         
+            <Button Content="Назначить монтажника" Margin="5" />
+            <Button Content="Обновить" Margin="5" Width="100" Click="UpdateButton"/>
         </StackPanel>
     </Grid>
         

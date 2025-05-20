@@ -3,6 +3,7 @@ using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 using System.Collections.Generic;
 using MySql.Data.MySqlClient;
+using Avalonia.Interactivity;
 
 namespace Ivan;
 
@@ -31,12 +32,12 @@ public partial class DispatcherWin : Window
 
          
            string orderInfo = $"{order.Id} | {order.Name} | {order.Adress} ";
-            OrdersListBox.Items.Add(orderInfo); // Просто добавляем текст
+            OrdersListBox.Items.Add(orderInfo); 
         }
     }
-    private List<Order> GetOrdersFromDatabase()
+    private List<Her> GetOrdersFromDatabase()
     {
-        var orders = new List<Order>();
+        var orders = new List<Her>();
 
         var conn = new MySqlConnection("Server=localhost;Database=Provider;User Id=root;Password=;");
         {
@@ -46,12 +47,13 @@ public partial class DispatcherWin : Window
             {
                 while (reader.Read())
                 {
-                    orders.Add(new Order
+                    orders.Add(new Her
                     {
-                        Id = reader.GetInt32("ID"),
+                        Id = reader.GetInt32("id"),
                         Name = reader.GetString("Name"),
+                        Description = reader.GetString("Description"),
                         Adress = reader.GetString("Adress"),
-                        Accountable = reader.GetString("Accountable")
+                        Accountable = reader.GetInt32("Accountable")
                     });
                 }
             }
@@ -60,8 +62,14 @@ public partial class DispatcherWin : Window
         return orders;
     }
 
-    
-    public class Order
+
+   private void UpdateButton(object sender, RoutedEventArgs e)
+    {
+        LoadOrders();
+    }
+
+
+    public class Her
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -70,7 +78,7 @@ public partial class DispatcherWin : Window
 
         public string Adress { get; set; }
         
-        public string Accountable { get; set; }
+        public int Accountable { get; set; }
 
     }
     
