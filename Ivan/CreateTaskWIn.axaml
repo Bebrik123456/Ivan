@@ -9,7 +9,7 @@
         <Button HorizontalAlignment="Left" VerticalAlignment="Top" Content="Назад"  Margin="5 5 0 0"/>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="10">
            
-            <TextBox Name="AderessTextBox" />
+            <TextBox Name="AderessTextBox" Watermark="Адрес заказа" />
             <TextBox Name="NameTextBox" Watermark="Название" MaxWidth="120" />
             <TextBox Name="DescriptionTextBox" Watermark="Описание" AcceptsReturn="True" TextWrapping ="Wrap" MaxWidth="250" MaxHeight="75" />         
             <Button Click="CreateOrderButton_OnClick"
